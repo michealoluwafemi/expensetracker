@@ -32,9 +32,9 @@
                     <div class="form-group col-md-6">
                       <label for="inputType">Flag</label>
                       <select v-model="expense.expFlag" class="form-control" id="inputType">
-                        <option>Bad</option>
-                        <option>Bearable</option>
-                        <option>Reasonable</option>
+                        <option value="bad">Bad</option>
+                        <option value="bearable">Bearable</option>
+                        <option value="reasonable">Reasonable</option>
                       </select>
                     </div>
                   </div>
