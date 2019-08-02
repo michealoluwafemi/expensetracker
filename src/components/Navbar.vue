@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">FMJ Expense</a>
+    <router-link to="/" class="navbar-brand">FMJ Expense</router-link>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,7 +16,7 @@
         </li>
         <li class="nav-item">
           <router-link
-            to="#myModal"
+            to="/add-new"
             class="nav-link"
             data-toggle="modal"
             data-target="#myModal"
@@ -63,11 +63,6 @@ export default {
         {
           to: "/",
           title: "Dashboard",
-          class: "nav-link"
-        },
-        {
-          to: "/view-all",
-          title: "Expenses",
           class: "nav-link"
         }
       ]

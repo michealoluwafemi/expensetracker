@@ -34,8 +34,8 @@
       },
       updateExpense(item) {
         this.expenses.push(item);
-        this.totalExp = parseFloat(this.totalExp + item.amt);
-        console.log(item);
+        this.totalExp = parseFloat(this.totalExp) + parseFloat(item.amt);
+        alert(item.length);
       }
     }
   }
